@@ -7,6 +7,7 @@ function TaskInput({value, handleInput, handleAddTask}) {
             value={value}
             onChange={handleInput}
             onKeyUp={handleAddTask}
+            class = 'text-input'
         />
     );
 }
