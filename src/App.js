@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
 
+
 function* gen() {
     let id = 0;
     while (true) {
@@ -62,9 +63,9 @@ function App() {
             {tasks.filter((task) => task.status).length ?
                 <button onClick={clearCompleted}>Remove Completed</button> : ''}
             <div>
-                <button onClick={() => setStatus('all')} class = "btn">All</button>
-                <button onClick={() => setStatus(false)}class = "btn">Active</button>
-                <button onClick={() => setStatus(true)}class = "btn">Done</button>
+                <button onClick={() => setStatus('all')} className={'btn'}>All</button>
+                <button onClick={() => setStatus(false)} className={'btn'}>Active</button>
+                <button onClick={() => setStatus(true)}className={'btn'}>Done</button>
             </div>
         </div>
     );

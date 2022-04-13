@@ -6,7 +6,7 @@ function TaskItem({task, removeTask, changeStatus}) {
 
             <span className={task.status ? 'status done' : 'status active'} onClick={() => changeStatus(task)} />
             {task.name}
-            <button onClick={() => removeTask(task)} class = 'btn1'>Delete</button>
+            <button onClick={() => removeTask(task)} className={'btn1'}>Delete</button>
         </li>
     );
 }
